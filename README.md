@@ -112,4 +112,4 @@ Example commands:
 - [LangChain](https://github.com/langchain-ai/langchain) and [OpenAI](https://platform.openai.com/docs/overview) – For powering natural language command interpretation.
 
 ## Contact
-For questions, feedback, or contributions, please open an issue on GitHub or contact [taherfattahi11@gmail.com](mailto:taherfattahi11@gmail.com).
+For questions, feedback, or contributions, please open an issue on GitHub or contact [taherfattahi11@gmail.com](mailto:taherfattahi11@gmail.com)
