@@ -69,8 +69,7 @@
     ```
 
 3. **Set Up Hardware:**
-
-- Ensure your Raspberry Pi is set up with the necessary hardware (microphone, Bluetooth adapter, motor drivers).
+    - Ensure your Raspberry Pi is set up with the necessary hardware (microphone, Bluetooth adapter, motor drivers).
 
 ## Usage
 1. **Running the Command Processor**
@@ -79,30 +78,30 @@ On your controller device (e.g., a Raspberry Pi acting as the command center), r
     ```bash
     python agent.py
     ```
-- The script listens for audio commands via the microphone.
-- It decodes audio using ggwave and processes the command using a LangChain agent.
-- Processed commands and then sent over Bluetooth to the robot.
-- Note: You will be prompted to enter your OpenAI API key.
+    - The script listens for audio commands via the microphone.
+    - It decodes audio using ggwave and processes the command using a LangChain agent.
+    - Processed commands and then sent over Bluetooth to the robot.
+    - Note: You will be prompted to enter your OpenAI API key.
 
-1. **Running the Robot Control Script**
+2. **Running the Robot Control Script**
 On the robot (or its dedicated controller), run:
 
     ```bash
     python tars-robot.py
     ```
 
-- The script sets up an RFCOMM Bluetooth server and waits for incoming commands.
-- Upon receiving a command, it decodes the message and uses the mecanum module (via mecanum.py) to execute movement.
-  
-## Command Examples
-https://waver.ggerganov.com
+    - The script sets up an RFCOMM Bluetooth server and waits for incoming commands.
+    - Upon receiving a command, it decodes the message and uses the mecanum module (via mecanum.py) to execute movement.
+3. **Open the ggwave website and enter your command**
+    - https://waver.ggerganov.com
 
+## Command Examples
 System supports natural language commands transmitted via the Waver website, which leverages ggwave's audio data-over-sound capabilities. Audio signals are captured through a microphone, decoded into text by ggwave, and then processed by your LangChain agent before being sent via Bluetooth to the robot.
 
 Example commands: 
-- ```Move the robot forward 25 centimeters and then turn left```
-- ```Turn right now```
-- ```Move the robot backward 25 centimeters```
+  - ```Move the robot forward 25 centimeters and then turn left```
+  - ```Turn right now```
+  - ```Move the robot backward 25 centimeters```
 
 <img src="images/robot.jpg" width="500"/>
 
