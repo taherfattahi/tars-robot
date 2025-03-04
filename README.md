@@ -11,13 +11,6 @@
 - **Mecanum Chassis Control** for precise movement on a robot with mecanum wheels.
 - **Raspberry Pi Hardware** serves as the central processing unit of the robot, handling all computational tasks and coordinating the various systems.
 
-## Features
-
-- **Audio Command Processing**: Listen to audio commands through a microphone, decode them with ggwave, and convert the audio to text.
-- **Intelligent Command Interpretation**: Leverage LangChain with OpenAI’s ChatGPT to parse and validate natural language commands (e.g., “forward 40 cm and turn right”).
-- **Bluetooth-based Communication**: Send movement commands from the controller to the robot over an RFCOMM Bluetooth connection.
-- **Robot Movement Execution**: On the robot side, interpret incoming commands and execute them via a custom mecanum chassis implementation.
-
 ## Project Structure
 
 - **agent.py**  
